@@ -1,2 +1,2 @@
 # The-game-of-life
-life's a game 
+### use this code in the online p5.js editor ( for now )
