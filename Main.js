@@ -11,16 +11,38 @@ function make2DArray(cols, rows){
 
 
 let grid;
-let cols = 10; 
-let rows = 10; 
+let cols; 
+let rows; 
+let res = 20; // resolution
 
 function setup(){
-  grid = make2DArray(10, 10);
+  createCanvas(600, 400);
+  cols = width / res;
+  rows = height / res;
+  
+  grid = make2DArray(cols, rows);
   for(let i =0; i<cols; i++){
     for(let j =0; j<rows; j++){
       grid[i][j] = floor(random(2));
     }
   }
-  
-  console.lot(console.table(grid));
+}
+
+function draw(){
+    background(0);
+    for(let i =0; i<cols; i++){
+      for(let j =0; j<rows; j++){
+        let x = i * res;
+        let y = j * res;
+        
+        if(grid[i][j] == 1){
+          fill(255);
+          rect(x, y, res, res);
+          
+        }
+        
+       
+    }
+  }
+  console.log(console.table(grid));
 }
