@@ -23,3 +23,5 @@ The rules of the Game of Life are implemented in the draw() function, where each
 # Modification
 
 You can modify the resolution of the grid by changing the value of the res variable, and you can modify the size of the canvas by changing the arguments of the createCanvas() function in the setup() function. You can also modify the rules of the game by changing the conditions in the if...else if...else block in the draw() function.
+
+![alt_text](<img width="1437" alt="Screenshot 2023-05-09 at 2 19 52 PM" src="https://github.com/peterspeeder/The-game-of-life/assets/93410865/ec5dc30f-c765-4046-b74f-fff6431d2092">)
